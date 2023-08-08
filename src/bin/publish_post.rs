@@ -18,5 +18,6 @@ fn main() {
         .returning(Post::as_returning())
         .get_result(connection)
         .unwrap();
+    
     println!("Published post {}", post.title);
 }
